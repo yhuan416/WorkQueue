@@ -10,7 +10,7 @@
 void *WorkQueueImplMalloc(size_t size);
 void WorkQueueImplFree(void *ptr);
 
-void *WorkQueueImplQueueCreate(const char *name, int16_t size, int16_t count);
+void *WorkQueueImplQueueCreate(const char *name, int32_t size, int32_t count);
 void WorkQueueImplQueueDestroy(void *queue);
 int32_t WorkQueueImplQueuePush(void *queue, void *data, int32_t timeout);
 int32_t WorkQueueImplQueuePop(void *queue, void *data, int32_t timeout);
